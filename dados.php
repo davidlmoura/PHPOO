@@ -39,19 +39,19 @@ $id = (int)$_GET['id'];
      <?
      foreach ($cliente as $cli)
         {
-        if($id == $cli->id)
-        {
-            echo "<div align='center'>
-                <div class='row'>
-                    <div class='span9 nome' align='center'>
-                    Nome: <b>".$cli->nome."</b><br />
-                    CPF: <b>".$cli->cpf."</b><br />
-                    E-mail: <b>".$cli->email."</b><br />
-                    Telefone: <b>".$cli->telefone."</b>
+        if($id == $cli->id) {
+     ?>
+            <div align="center">
+                <div class="row">
+                    <div class="span9 nome" align="center">
+                    Nome: <b><?=$cli->nome?></b><br />
+                    CPF: <b><?=$cli->cpf?></b><br />
+                    E-mail: <b><?=$cli->email?></b><br />
+                    Telefone: <b><?=$cli->telefone?></b>
                     </div>
                 </div>
-            </div>";
-        }
+            </div>
+     <?   }
         }
      ?>
 

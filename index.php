@@ -6,7 +6,8 @@ function cmp($a, $b) {
     return $a['id'] > $b['id'];
 }
 
-if($_GET['ordem'] == 1)
+$ordem = $_GET['ordem'];
+if($ordem == 1)
 {
     rsort($cliente);
 }
@@ -32,40 +33,36 @@ if($_GET['ordem'] == 1)
     <div class="linha"></div>
     <div class="container topo">
 		<div class="row">
-         <?   if($_GET['ordem'] == 1)
-            {
-                echo '<form class="form-search span6" id="busca" name="busca" action="?ordem=0" method="post">
+         <?   if($_GET['ordem'] == 1) { ?>
+                <form class="form-search span6" id="busca" name="busca" action="?ordem=0" method="post">
                 <div class="input-prepend pesquisar">
                     <button type="submit" class="btn buscar gradient">Ordem Crescente</button>
                 </div>
-    		</form>';
-            } else {
-             echo '<form class="form-search span6" id="busca" name="busca" action="?ordem=1" method="post">
+    		</form>
+         <? } else { ?>
+                <form class="form-search span6" id="busca" name="busca" action="?ordem=1" method="post">
                 <div class="input-prepend pesquisar">
                     <button type="submit" class="btn buscar gradient">Ordem Decrescente</button>
                 </div>
-    		</form>';
-         }
-         ?>
+    		</form>
+        <? } ?>
 							<div class="titulo span12">LISTA DE CLIENTES
 			</div>
 					</div>
         <div class="dados">
 
-        <?    foreach($cliente as $cli) {
+        <?    foreach($cliente as $cli) { ?>
 
-            echo "<div class='cinza'>
-                <div class='row'>
-                    <div class='span9 nome'>
-                    ".$cli->nome."
+            <div class="cinza">
+                <div class="row">
+                    <div class="span9 nome">
+                    <?=$cli->nome?>
                     </div>
-                    <a href='dados.php?id=".$cli->id ."'><div class='span2 exportar'><i class='icon-download-alt icon-white'></i> ver dados</div></a>
+                    <a href="dados.php?id=<?=$cli->id?>"><div class="span2 exportar"><i class="icon-download-alt icon-white"></i> ver dados</div></a>
                 </div>
-            </div>";
-            // echo "<a href='dados.php?id=".$cli->id."'>".$cli->nome."</a><br />";
+            </div>
 
-            }
-        ?>
+        <? } ?>
 
 		</div>
     </div>
