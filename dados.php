@@ -45,13 +45,29 @@ $id = (int)$_GET['id'];
             <div align="center">
                 <div class="row">
                     <div class="span9 nome" align="center">
-                    Nome: <b><?=$cli->getNome()?></b><br />
+                    Nome: <b><?=$cli->getNome()?></b>
+
+      <?
+             for($i = 0; $i < $cli->getClassificacao(); $i++){
+
+                echo "<img src='star.png' width='30' height='30' border='0'/>";
+
+             } ?>
+
+                        <br />
                         <? if(get_class($cli) == "Cliente") { ?>
                             CPF: <b><?=$cli->getCpf()?></b><br />
                         <? } else { ?>
                             CNPJ: <b><?=$cli->getCnpj()?></b><br />
                         <? } ?>
+
                     E-mail: <b><?=$cli->getEmail()?></b><br />
+                    Endereço: <b><?=$cli->getEndereco()?></b><br />
+
+                        <? if($cli->getEnderecoCobranca() != "") { ?>
+                            Endereço de Cobrança: <b><?=$cli->getEnderecoCobranca()?></b><br />
+                        <? } ?>
+
                     Telefone: <b><?=$cli->getTelefone()?></b>
                     </div>
                 </div>

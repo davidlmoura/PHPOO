@@ -7,6 +7,8 @@ class Cliente
     protected $telefone;
     private $cpf;
     protected $email;
+    protected $endereco;
+    protected $endereco_cobranca;
 
     /**
      * @return mixed
@@ -107,6 +109,40 @@ class Cliente
     public function setClassificacao($classificacao)
     {
         $this->classificacao = $classificacao;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEndereco()
+    {
+        return $this->endereco;
+    }
+
+    /**
+     * @param mixed $endereco
+     */
+    public function setEndereco($endereco)
+    {
+        $this->endereco = $endereco;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEnderecoCobranca()
+    {
+        return $this->endereco_cobranca;
+    }
+
+    /**
+     * @param mixed $endereco_cobranca
+     */
+    public function setEnderecoCobranca($endereco_cobranca)
+    {
+        $this->endereco_cobranca = $endereco_cobranca;
+        return $this;
     }
 
 
