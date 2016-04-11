@@ -1,6 +1,7 @@
 <?php
 
 require_once "Cliente.php";
+require_once "ClienteJuridico.php";
 
 function cmp($a, $b) {
     return $a['id'] > $b['id'];
@@ -11,6 +12,8 @@ if($ordem == 1)
 {
     rsort($cliente);
 }
+
+
 
 ?>
 
@@ -56,9 +59,9 @@ if($ordem == 1)
             <div class="cinza">
                 <div class="row">
                     <div class="span9 nome">
-                    <?=$cli->nome?>
+                    <?=$cli->getNome()?>
                     </div>
-                    <a href="dados.php?id=<?=$cli->id?>"><div class="span2 exportar"><i class="icon-download-alt icon-white"></i> ver dados</div></a>
+                    <a href="dados.php?id=<?=$cli->getId()?>"><div class="span2 exportar"><i class="icon-download-alt icon-white"></i> ver dados</div></a>
                 </div>
             </div>
 
