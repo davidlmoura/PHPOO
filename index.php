@@ -64,7 +64,13 @@ if($ordem == 1)
                             - <b>Pessoa Física</b>
                         <? } else { ?>
                             - <b>Pessoa Jurídica</b>
-                        <? } ?>
+                        <? }
+
+                        for($i = 0; $i < $cli->getClassificacao(); $i++){
+
+                            echo "<img src='star.png' width='20' height='20' border='0'/>";
+
+                        } ?>
 
                     </div>
                     <a href="dados.php?id=<?=$cli->getId()?>"><div class="span2 exportar"><i class="icon-download-alt icon-white"></i> ver dados</div></a>

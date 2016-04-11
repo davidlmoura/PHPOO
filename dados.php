@@ -46,7 +46,11 @@ $id = (int)$_GET['id'];
                 <div class="row">
                     <div class="span9 nome" align="center">
                     Nome: <b><?=$cli->getNome()?></b><br />
-                    CPF: <b><?=$cli->getCpf()?></b><br />
+                        <? if(get_class($cli) == "Cliente") { ?>
+                            CPF: <b><?=$cli->getCpf()?></b><br />
+                        <? } else { ?>
+                            CNPJ: <b><?=$cli->getCnpj()?></b><br />
+                        <? } ?>
                     E-mail: <b><?=$cli->getEmail()?></b><br />
                     Telefone: <b><?=$cli->getTelefone()?></b>
                     </div>

@@ -2,7 +2,7 @@
 
 class Cliente
 {
-    protected $id;
+    protected $classificacao;
     protected $nome;
     protected $telefone;
     private $cpf;
@@ -91,6 +91,22 @@ class Cliente
     {
         $this->id = $id;
         return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getClassificacao()
+    {
+        return $this->classificacao;
+    }
+
+    /**
+     * @param mixed $classificacao
+     */
+    public function setClassificacao($classificacao)
+    {
+        $this->classificacao = $classificacao;
     }
 
 
