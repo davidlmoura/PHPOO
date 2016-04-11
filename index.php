@@ -60,6 +60,12 @@ if($ordem == 1)
                 <div class="row">
                     <div class="span9 nome">
                     <?=$cli->getNome()?>
+                        <? if(get_class($cli) == "Cliente") { ?>
+                            - <b>Pessoa Física</b>
+                        <? } else { ?>
+                            - <b>Pessoa Jurídica</b>
+                        <? } ?>
+
                     </div>
                     <a href="dados.php?id=<?=$cli->getId()?>"><div class="span2 exportar"><i class="icon-download-alt icon-white"></i> ver dados</div></a>
                 </div>
