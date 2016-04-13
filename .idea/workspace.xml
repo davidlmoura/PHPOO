@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1034968e-9288-41c7-820d-5a0f3beffaa4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InterfaceCliente.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterfaceClassificacao.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterfaceEndereco.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cliente.php" afterPath="$PROJECT_DIR$/Cliente.php" />
     </list>
@@ -55,31 +58,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cliente.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Cliente.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cliente.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.060356654">
-              <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+            <state vertical-scroll-proportion="-1.4193548">
+              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InterfaceEndereco.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InterfaceEndereco.php">
+      <file leaf-file-name="InterfaceCliente.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/InterfaceCliente.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.548387">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InterfaceClassificacao.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InterfaceClassificacao.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.548387">
-              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,6 +92,7 @@
         <option value="$PROJECT_DIR$/InterfaceEndereco.php" />
         <option value="$PROJECT_DIR$/ClienteJuridico.php" />
         <option value="$PROJECT_DIR$/InterfaceClassificacao.php" />
+        <option value="$PROJECT_DIR$/InterfaceCliente.php" />
         <option value="$PROJECT_DIR$/Cliente.php" />
       </list>
     </option>
@@ -342,7 +336,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460506979179</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Ajustando Include da Interface Classificacao">
+      <created>1460508335865</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1460508335865</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -400,7 +400,8 @@
     <MESSAGE value="Adicionado e implementado Interface para Cliente (Classificação)" />
     <MESSAGE value="Enviando arquivo com a Interface da Classificacao" />
     <MESSAGE value="Adicionado Interface para endereço de cobrança e finalização." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionado Interface para endereço de cobrança e finalização." />
+    <MESSAGE value="Ajustando Include da Interface Classificacao" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustando Include da Interface Classificacao" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -524,14 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceEndereco.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.548387">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-49.677418">
@@ -548,18 +541,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InterfaceClassificacao.php">
+    <entry file="file://$PROJECT_DIR$/Cliente.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.548387">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        <state vertical-scroll-proportion="-1.4193548">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cliente.php">
+    <entry file="file://$PROJECT_DIR$/InterfaceCliente.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.060356654">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

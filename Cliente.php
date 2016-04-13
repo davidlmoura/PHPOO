@@ -1,6 +1,6 @@
 <?php
 
-include_once("InterfaceClassificacao.php");
+include_once("InterfaceCliente.php");
 
 class Cliente implements InterfaceClassificacao
 {
