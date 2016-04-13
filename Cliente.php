@@ -1,5 +1,7 @@
 <?php
 
+include_once("InterfaceClassificacao.php");
+
 class Cliente implements InterfaceClassificacao
 {
     protected $classificacao;
