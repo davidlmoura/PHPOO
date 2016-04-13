@@ -1,6 +1,6 @@
 <?php
 
-class Cliente
+class Cliente implements ClienteInterface
 {
     protected $classificacao;
     protected $nome;
