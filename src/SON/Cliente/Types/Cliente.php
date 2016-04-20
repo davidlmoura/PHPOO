@@ -7,6 +7,7 @@ use SON\Cliente\InterfaceEndereco;
 
 class Cliente implements InterfaceClassificacao
 {
+    protected $id;
     protected $classificacao;
     protected $nome;
     protected $telefone;
