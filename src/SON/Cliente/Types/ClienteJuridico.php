@@ -1,5 +1,6 @@
 <?php
 
+namespace SON\Cliente\Types;
 
 class ClienteJuridico extends Cliente
 {

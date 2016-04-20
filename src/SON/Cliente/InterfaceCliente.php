@@ -1,5 +1,7 @@
 <?php
 
+namespace SON\Cliente;
+
 interface InterfaceClassificacao
 {
     public function getClassificacao();

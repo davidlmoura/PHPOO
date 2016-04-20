@@ -1,6 +1,9 @@
 <?php
 
-include_once("InterfaceCliente.php");
+namespace SON\Cliente\Types;
+
+use SON\Cliente\InterfaceClassificacao;
+use SON\Cliente\InterfaceEndereco;
 
 class Cliente implements InterfaceClassificacao
 {
