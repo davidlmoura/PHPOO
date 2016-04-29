@@ -2,12 +2,6 @@
 
 namespace SON\Cliente;
 
-interface InterfaceClassificacao
-{
-    public function getClassificacao();
-    public function setClassificacao($classificacao);
-}
-
 interface InterfaceEndereco
 {
     public function getEnderecoCobranca();
